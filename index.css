@@ -1,0 +1,267 @@
+body, html {
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+.welcome-text {
+  position: absolute;
+
+  text-align: left;
+  font-family: pixelify sans, Arial;
+  font-weight: 550;
+  font-size: 6vw;
+
+  max-width: 45vw;
+  top: 30%;
+  right: 7%; 
+}
+
+.home {
+  position: relative;
+
+  background-image: url('home images/background.png');
+  height: 100vh;
+  margin-top: -130px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.typewriter {
+  position: absolute;
+
+  text-align: left;
+  font-family: Pixelify Sans, Arial;
+  font-weight: 400;
+  font-size: 3vw;
+
+  max-width: calc(45vw);
+  top: 50%;
+  right: 7%; 
+}
+
+.grass {
+  position: absolute;
+  
+  transform: translateY(50%);
+  bottom: 0;
+  left: 0;
+  width: 115%;
+  
+  height: auto;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.sprite {
+  position: absolute;
+
+  width: auto;
+  height: 60vh;
+  bottom: 0px;
+  left: 80px;
+}
+
+.designs {
+  font-family: Pixelify Sans, Arial;
+  color: black;
+  font-weight: 400;
+  font-size: 7.5vw;
+  text-align: right;
+
+  margin: 20vh 5vh 5vh 0;
+}
+
+.development {
+  font-family: Pixelify Sans, Arial;
+  color: black;
+  font-weight: 400;
+  font-size: 7.5vw;
+  text-align: left;
+
+  margin: 5vw 0 5vh 5vw;
+}
+
+
+.design-item, .development-item {
+  font-family: Arial, Helvetica, sans-serif;
+
+  width: 100%;
+
+  border-radius: 20px;
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.design-box, .development-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  
+  margin: 0 60px;
+  gap: 60px;
+}
+
+.design-item:hover, .development-item:hover {
+  transform: scale(1.05);
+}
+
+.popup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(0,0,0,.5);
+  align-items: center;
+
+  z-index: 100;
+}
+
+.project-window {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 20px;
+  padding: 0;
+
+  width: 75vw;
+  height: 75vh;
+
+  overflow: auto;
+}
+
+.project-window-close {
+  position: absolute;
+  width: 30px;
+  top: 5px;
+  right: 5px;
+
+  z-index: 1000;
+}
+
+.popup:not(:target) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.project-title{
+  position: absolute;
+
+  font-family: Pixelify Sans, Arial;
+  font-weight: 500;
+  font-size: 7vw;
+
+  top: 15%;
+  right: 5%;
+}
+
+.project-desc {
+  position: absolute;
+
+  font-family: Pixelify Sans, Arial;
+  font-weight: 400;
+  font-size: 2.8vw;
+
+  top: 40%;
+  right: 5%;
+
+  margin-top: 10%;
+}
+
+.project-header{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  height: 75%;
+  top: 0;
+  left: 0;
+  margin:0;
+}
+
+.project-logo {
+  position: absolute;
+  height: 70%;
+  left: 3%;
+  top: 22%;
+}
+
+.preview{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.project-preview {
+  display: inline-block;
+
+  font-family: Pixelify Sans, Arial;
+  font-size: 3vw;
+  font-weight: 400;
+
+  margin: 2% 0 0 3%;
+}
+
+.project-preview-text{
+  display: inline-block;
+
+  font-family: Tahoma;
+  font-size: 2vw;
+  font-weight: 100;
+}
+
+.project-image-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  gap: 1vw;
+
+  margin: 0 1vw;
+}
+
+
+.project-image {
+  object-fit: contain;
+
+  height: 60vh;
+  max-width: 90%;
+  margin-bottom: 2vw;
+}
+
+
+.project-sub {
+  position: relative;
+  display: block;
+
+  font-family: Pixelify Sans, Arial;
+  font-weight: 400;
+  font-size: 4.9vw;
+
+  padding: 0;
+  line-height: 0.2;
+
+  margin: 8% 0 0 3%;
+}
+
+.project-body {
+  position: relative;
+  display: block;
+
+  font-family: Tahoma;
+  font-size: 2.1vw;
+  line-height: 1.25;
+
+  margin: 5% 3%;
+}

@@ -1,0 +1,151 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    background: rgb(115, 177, 98);
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 3vh;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .designs {
+    font-family: Pixelify Sans, Arial;
+    color: black;
+    font-weight: 400;
+    font-size: 7.5vw;
+    text-align: right;
+  
+    margin: 10vh 5vh 5vh 0;
+  }
+
+  .design-box, .development-box {
+    grid-template-columns: repeat(auto-fill, minmax(50vw, 1fr));
+    margin: 0 5vw 0;
+    gap: 10vw;
+  }
+
+  .project-header {
+    display: grid;
+    grid-template-rows: auto auto auto; 
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 5vw;
+    gap: 2vh;
+    text-align: center;
+  }
+
+  .project-logo {
+    position: relative;
+    grid-row: 1;
+ 
+    height: 30vw;
+    width: auto;
+    margin: 0 5% 0 0;
+  }
+
+  .project-title {
+    position: relative;
+    grid-row: 2;
+    font-size: 8vw;
+    margin: 0 0 0 10%;
+    padding: 0;
+  }
+
+  .project-desc {
+    position: relative;
+    grid-row: 3;
+    font-size: 5vw;
+    margin: 0 0 10% 10%;
+    padding: 0;
+  }
+
+  .sprite {
+    height: 30vh;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .welcome-text {
+    position: absolute;
+
+    font-size: 15vw;
+    text-align: center;
+
+    width: 100%; 
+    max-width: 100%;
+
+    top: 30%;
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+
+  .welcome-text {
+    position: absolute;
+
+    font-size: 15vw;
+    text-align: center;
+
+    
+    top: 30%;
+    left: 50%; 
+    transform: translateX(-50%); 
+
+
+    width: 100%; 
+    max-width: 100%; 
+
+    margin: 0;
+    padding: 0 5%; 
+    right: auto; 
+  }
+
+  .typewriter {
+    position: absolute;
+
+    font-size: 9vw;
+    text-align: center;
+
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45%;
+    
+    right: auto;
+    animation: blink-caret .75s step-end infinite;
+  }
+
+  .instruct {
+    display: none;
+  }
+
+  .me {
+    position: absolute;
+    display: grid;
+
+    width: 100%;
+    margin: 20% 0 10% 0;
+
+    border-radius: 20px;
+  }
+  
+  .cartoon-me {
+    display:none;
+  }
+}

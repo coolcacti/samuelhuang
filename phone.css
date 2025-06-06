@@ -1,4 +1,9 @@
 @media (max-width: 768px) {
+  
+  .home {
+    background-attachment: scroll;
+  } 
+  
   .nav-links {
     display: none;
     position: absolute;
@@ -12,6 +17,7 @@
     border-radius: 10px;
     z-index: 1000;
   }
+  
 
   .nav-links.show {
     display: flex;
